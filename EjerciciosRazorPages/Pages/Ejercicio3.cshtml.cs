@@ -45,23 +45,23 @@ namespace EjerciciosRazorPages.Pages
             double sumaTotal = 0;
             Pasos = "";
 
-            // Usamos un ciclo for para cada término de la sumatoria
+            
             for (int k = 0; k <= N; k++)
             {
-                // Calcular el coeficiente binomial C(n,k)
+                
                 long coeficiente = CalcularCoeficienteBinomial(N, k);
 
-                // Calcular (ax)^(n-k)
+                
                 double axTerm = Math.Pow(A * X, N - k);
 
-                // Calcular (by)^k
+                
                 double byTerm = Math.Pow(B * Y, k);
 
-                // Calcular el término actual
+                
                 double terminoActual = coeficiente * axTerm * byTerm;
                 sumaTotal += terminoActual;
 
-                // Construir la representación del paso
+               
                 Pasos += $"Para k={k}: C({N},{k}) = {coeficiente}, ";
                 Pasos += $"(ax)^({N}-{k}) = {axTerm}, ";
                 Pasos += $"(by)^{k} = {byTerm}, ";
@@ -73,13 +73,13 @@ namespace EjerciciosRazorPages.Pages
 
         private long CalcularCoeficienteBinomial(int n, int k)
         {
-            // Usamos la propiedad C(n,k) = C(n, n-k) para optimizar
+            
             if (k > n - k)
                 k = n - k;
 
             long resultado = 1;
 
-            // Calculamos el coeficiente usando un ciclo for
+            
             for (int i = 1; i <= k; i++)
             {
                 resultado *= (n - k + i);
@@ -89,7 +89,7 @@ namespace EjerciciosRazorPages.Pages
             return resultado;
         }
 
-        // Método alternativo para calcular factorial (no usado en este caso por optimización)
+        
         private long Factorial(int numero)
         {
             if (numero <= 1)
@@ -98,7 +98,7 @@ namespace EjerciciosRazorPages.Pages
             long resultado = 1;
             int i = 2;
 
-            // Usamos un ciclo while para calcular el factorial
+            
             while (i <= numero)
             {
                 resultado *= i;

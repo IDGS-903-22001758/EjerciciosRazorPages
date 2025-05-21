@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\vivia\\source\\repos\\EjerciciosRazorPages\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{14D7EE3B-C3C5-4709-9981-81C525DB15AF}|EjerciciosRazorPages\\EjerciciosRazorPages.csproj|c:\\users\\vivia\\source\\repos\\ejerciciosrazorpages\\ejerciciosrazorpages\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{14D7EE3B-C3C5-4709-9981-81C525DB15AF}|EjerciciosRazorPages\\EjerciciosRazorPages.csproj|solutionrelative:ejerciciosrazorpages\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{14D7EE3B-C3C5-4709-9981-81C525DB15AF}|EjerciciosRazorPages\\EjerciciosRazorPages.csproj|c:\\users\\vivia\\source\\repos\\ejerciciosrazorpages\\ejerciciosrazorpages\\pages\\ejercicio1.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{14D7EE3B-C3C5-4709-9981-81C525DB15AF}|EjerciciosRazorPages\\EjerciciosRazorPages.csproj|solutionrelative:ejerciciosrazorpages\\pages\\ejercicio1.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -42,11 +46,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
+              "Title": ".gitignore",
+              "DocumentMoniker": "C:\\Users\\vivia\\source\\repos\\EjerciciosRazorPages\\EjerciciosRazorPages\\.gitignore",
+              "RelativeDocumentMoniker": "EjerciciosRazorPages\\.gitignore",
+              "ToolTip": "C:\\Users\\vivia\\source\\repos\\EjerciciosRazorPages\\EjerciciosRazorPages\\.gitignore",
+              "RelativeToolTip": "EjerciciosRazorPages\\.gitignore",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-05-21T19:48:48.671Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Ejercicio4.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\vivia\\source\\repos\\EjerciciosRazorPages\\EjerciciosRazorPages\\Pages\\Ejercicio4.cshtml.cs",
               "RelativeDocumentMoniker": "EjerciciosRazorPages\\Pages\\Ejercicio4.cshtml.cs",
@@ -59,7 +76,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Ejercicio4.cshtml",
               "DocumentMoniker": "C:\\Users\\vivia\\source\\repos\\EjerciciosRazorPages\\EjerciciosRazorPages\\Pages\\Ejercicio4.cshtml",
               "RelativeDocumentMoniker": "EjerciciosRazorPages\\Pages\\Ejercicio4.cshtml",
@@ -72,7 +89,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Ejercicio3.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\vivia\\source\\repos\\EjerciciosRazorPages\\EjerciciosRazorPages\\Pages\\Ejercicio3.cshtml.cs",
               "RelativeDocumentMoniker": "EjerciciosRazorPages\\Pages\\Ejercicio3.cshtml.cs",
@@ -85,7 +102,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Ejercicio3.cshtml",
               "DocumentMoniker": "C:\\Users\\vivia\\source\\repos\\EjerciciosRazorPages\\EjerciciosRazorPages\\Pages\\Ejercicio3.cshtml",
               "RelativeDocumentMoniker": "EjerciciosRazorPages\\Pages\\Ejercicio3.cshtml",
@@ -98,7 +115,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Ejercicio2.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\vivia\\source\\repos\\EjerciciosRazorPages\\EjerciciosRazorPages\\Pages\\Ejercicio2.cshtml.cs",
               "RelativeDocumentMoniker": "EjerciciosRazorPages\\Pages\\Ejercicio2.cshtml.cs",
@@ -111,7 +128,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Ejercicio2.cshtml",
               "DocumentMoniker": "C:\\Users\\vivia\\source\\repos\\EjerciciosRazorPages\\EjerciciosRazorPages\\Pages\\Ejercicio2.cshtml",
               "RelativeDocumentMoniker": "EjerciciosRazorPages\\Pages\\Ejercicio2.cshtml",
@@ -124,7 +141,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Ejercicio1.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\vivia\\source\\repos\\EjerciciosRazorPages\\EjerciciosRazorPages\\Pages\\Ejercicio1.cshtml.cs",
               "RelativeDocumentMoniker": "EjerciciosRazorPages\\Pages\\Ejercicio1.cshtml.cs",
@@ -137,13 +154,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Ejercicio1.cshtml",
               "DocumentMoniker": "C:\\Users\\vivia\\source\\repos\\EjerciciosRazorPages\\EjerciciosRazorPages\\Pages\\Ejercicio1.cshtml",
               "RelativeDocumentMoniker": "EjerciciosRazorPages\\Pages\\Ejercicio1.cshtml",
-              "ToolTip": "C:\\Users\\vivia\\source\\repos\\EjerciciosRazorPages\\EjerciciosRazorPages\\Pages\\Ejercicio1.cshtml*",
-              "RelativeToolTip": "EjerciciosRazorPages\\Pages\\Ejercicio1.cshtml*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAARAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\vivia\\source\\repos\\EjerciciosRazorPages\\EjerciciosRazorPages\\Pages\\Ejercicio1.cshtml",
+              "RelativeToolTip": "EjerciciosRazorPages\\Pages\\Ejercicio1.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-05-18T21:57:54.1Z",
               "EditorCaption": ""
