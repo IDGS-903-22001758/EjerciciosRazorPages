@@ -1,0 +1,118 @@
+﻿@page
+@model EjerciciosRazorPages.Pages.Ejercicio1Model
+@{
+}
+<h3>Ejercicio  1 de IMC</h3>
+
+
+<form method="post">
+    <div class="mb-3">
+        <label for="peso" class="form-label">Ingresa tu peso</label>
+        <input type="text" class="form-control" id="peso" name="peso" asp-for="Peso" required />
+    </div>
+    <div class="mb-3">
+        <label for="altura" class="form-label">Ingresa tu altura</label>
+        <input type="text" class="form-control" id="altura" name="altura" asp-for="Altura" required />
+    </div>
+    <p><input type="submit" value="Calcular" /></p>
+
+    @if (Model.IMC ==0)
+    {
+        
+    }
+    else if(Model.IMC < 18)
+    {
+        <div>
+            <p>IMC = @Model.IMC</p>
+        </div>
+        <div>
+            <p>Tienes peso bajo segun tu IMC, aqui unas recomendaciones para ti:</p>
+            <p>
+               <br />🔹 Aumentar la ingesta calórica saludable: Consumir más proteínas (pollo, pescado, legumbres), carbohidratos complejos (avena, arroz integral) y grasas buenas (aguacate, frutos secos).
+               <br />🔹 Ejercicio de fuerza: Realizar entrenamiento con pesas o resistencia para ganar masa muscular en lugar de grasa.
+               <br />🔹 Consultar a un especialista: Podría haber causas como metabolismo acelerado, problemas de absorción de nutrientes o estrés que requieran atención médica.
+			</p>
+            <img src="~/img/pesobajo.jpeg" />
+        </div>
+    }
+    else if (Model.IMC >= 18 && Model.IMC < 25)
+    {
+        <div>
+            <p>IMC = @Model.IMC</p>
+        </div>
+        <div>
+            <p>Tienes un peso normal, igual aqui te dajere unas recomendaciones para ti:</p>
+            <p>
+                <br />🔹 Mantener una dieta equilibrada: Incluir frutas, verduras, proteínas magras y granos enteros para conservar un peso saludable.
+                <br />🔹 Ejercicio regular: 150 minutos de actividad moderada a la semana (caminar, nadar, ciclismo).
+                <br />🔹 Monitoreo periódico: Revisar el IMC cada 3-6 meses para detectar cambios y ajustar hábitos si es necesario.
+            </p>
+			<img src="~/img/pesonormal.jpeg" />
+        </div>
+    }
+    else if (Model.IMC >= 25 && Model.IMC < 27)
+    {
+        <div>
+            <p>IMC = @Model.IMC</p>
+        </div>
+        <div>
+            <p>Tienes sobrepeso, te dejare aqui unas recomendaciones para ti: </p>
+            <p>
+                <br />🔹 Reducir azúcares y ultraprocesados: Evitar refrescos, dulces y comida rápida para prevenir un aumento mayor.
+                <br />🔹 Aumentar actividad física: Caminar 10,000 pasos diarios o hacer ejercicios cardiovasculares 3-4 veces por semana.
+                <br />🔹 Controlar porciones: Usar platos más pequeños y priorizar vegetales (mitad del plato) para reducir calorías sin pasar hambre.
+            </p>
+			<img src="~/img/sobrepeso.jpeg" />
+        </div>
+    }
+    else if (Model.IMC >= 27 && Model.IMC < 30)
+    {
+        <div>
+            <p>IMC = @Model.IMC</p>
+        </div>
+        <div>
+            <p>Tienes obesidad grado 1, te dejare unas recomendaciones que te ayuden a cuidarte: </p>
+            <p>
+                <br />🔹 Dieta personalizada: Acudir a un nutricionista para un plan con déficit calórico moderado (500 kcal menos al día).
+                <br />🔹 Ejercicio combinado: Cardio (30 min/día) + entrenamiento de fuerza (2-3 veces/semana) para perder grasa y mantener músculo.
+                <br />🔹 Dormir bien: Priorizar 7-8 horas de sueño, ya que la falta de descanso afecta hormonas del hambre (ghrelina y leptina).
+            </p>
+			<img src="~/img/obesidad1.jpeg" />
+        </div>
+    }
+    else if (Model.IMC >= 30 && Model.IMC < 40)
+    {
+        <div>
+            <p>IMC = @Model.IMC</p>
+        </div>
+        <div>
+            <p>Tienes obesidad grado 2, te dejare unas recomendaciones que te ayuden a cuidarte: </p>
+            <p>
+                <br />🔹 Supervisión médica: Evaluar riesgos de diabetes, hipertensión o apnea del sueño y considerar medicación si es necesario.
+                <br />🔹 Ejercicio de bajo impacto: Natación, bicicleta o yoga para evitar lesiones en articulaciones.
+                <br />🔹 Terapia conductual: Trabajar con un psicólogo o coach para manejar ansiedad por comer y establecer metas realistas.
+			</p>
+            <img src="~/img/obesidad2.jpeg" />
+        </div>
+    }
+    else if (Model.IMC >= 40)
+    {
+        <div>
+            <p>IMC = @Model.IMC</p>
+        </div>
+        <div>
+            <p>Tienes obesidad grado 3, te dejare unas recomendaciones que te ayuden a cuidarte: </p>
+            <p>
+                <br />🔹 Intervención profesional: Valorar opciones como cirugía bariátrica (bypass gástrico, manga gástrica) bajo supervisión médica.
+                <br />🔹 Ejercicio adaptado: Iniciar con actividades sencillas (caminatas cortas, ejercicios en silla) y aumentar progresivamente.
+                <br />🔹 Apoyo multidisciplinario: Equipo con médico, nutriólogo, psicólogo y fisioterapeuta para abordar todos los aspectos de la obesidad mórbida.
+            </p>
+			<img src="~/img/obesidad3.jpeg" />
+        </div>
+    }
+    
+</form>
+
+@{
+
+}

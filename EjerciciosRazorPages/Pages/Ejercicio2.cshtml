@@ -1,0 +1,38 @@
+﻿@page
+@model EjerciciosRazorPages.Pages.Ejercicio2Model
+@{
+}
+
+
+<h2>Programa 2 de Cifrado</h2>
+
+<form method="post">
+    <div class="form-group">
+        <label asp-for="Desplazamiento">Desplazamiento (n):</label>
+        <input asp-for="Desplazamiento" class="form-control" />
+        <span asp-validation-for="Desplazamiento" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Mensaje">Mensaje:</label>
+        <textarea asp-for="Mensaje" class="form-control" rows="3"></textarea>
+    </div>
+
+    <div class="form-group">
+        <label>Operación:</label>
+        <select asp-for="Operacion" class="form-control">
+            <option value="cifrar">Cifrar</option>
+            <option value="descifrar">Descifrar</option>
+        </select>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Procesar</button>
+</form>
+
+@if (!string.IsNullOrEmpty(Model.Resultado))
+{
+    <div class="resultado mt-4">
+        <h4>Resultado:</h4>
+        <p class="alert alert-info">@Model.Resultado</p>
+    </div>
+}

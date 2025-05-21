@@ -1,0 +1,55 @@
+﻿@page
+@model EjerciciosRazorPages.Pages.Ejercicio3Model
+@{
+}
+
+
+<h2>Expansión Binomial: (ax + by)<sup>n</sup></h2>
+
+<form method="post">
+    <div class="form-group">
+        <label asp-for="A">Coeficiente a:</label>
+        <input asp-for="A" class="form-control" type="number" step="any" />
+        <span asp-validation-for="A" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="X">Variable x:</label>
+        <input asp-for="X" class="form-control" type="number" step="any" />
+        <span asp-validation-for="X" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="B">Coeficiente b:</label>
+        <input asp-for="B" class="form-control" type="number" step="any" />
+        <span asp-validation-for="B" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Y">Variable y:</label>
+        <input asp-for="Y" class="form-control" type="number" step="any" />
+        <span asp-validation-for="Y" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="N">Exponente n:</label>
+        <input asp-for="N" class="form-control" type="number" min="0" />
+        <span asp-validation-for="N" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Calcular Expansión</button>
+</form>
+
+@if (!string.IsNullOrEmpty(Model.Resultado))
+{
+    <div class="resultado mt-4">
+        <h4>Resultado:</h4>
+        <p class="alert alert-success">@Html.Raw(Model.Resultado)</p>
+
+        <h4>Desarrollo:</h4>
+        <p>@Html.Raw(Model.Pasos)</p>
+
+        <h4>Fórmula utilizada:</h4>
+        <p>\[(ax + by)^n = \sum_{k=0}^n \binom{n}{k} (ax)^{n-k} (by)^k\]</p>
+    </div>
+}

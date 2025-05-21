@@ -1,0 +1,47 @@
+﻿@page
+@model EjerciciosRazorPages.Pages.Ejercicio4Model
+@{
+}
+
+<h2>Ejercicio 4: Estadísticas de Arreglo Aleatorio</h2>
+
+
+<hr />
+
+<h3>Arreglo Aleatorio:</h3>
+<table class="table table-bordered">
+    <tr>
+        @for (int i = 0; i < Model.Numeros.Length; i++)
+        {
+            <td>@Model.Numeros[i]</td>
+        }
+    </tr>
+</table>
+
+<h3>Resultados:</h3>
+<ul>
+    <li>Suma: @Model.Suma</li>
+    <li>Promedio: @Model.Promedio.ToString("0.00")</li>
+    <li>
+        Moda:
+        @if (Model.Moda.Count > 0)
+        {
+            @string.Join(", ", Model.Moda)
+        }
+        else
+        {
+            <span>No hay moda (todos los números son únicos)</span>
+        }
+    </li>
+    <li>Mediana: @Model.Mediana</li>
+</ul>
+
+<h3>Arreglo Ordenado:</h3>
+<table class="table table-bordered">
+    <tr>
+        @for (int i = 0; i < Model.NumerosOrdenados.Length; i++)
+        {
+            <td>@Model.NumerosOrdenados[i]</td>
+        }
+    </tr>
+</table>
